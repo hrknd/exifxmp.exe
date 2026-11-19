@@ -1,0 +1,15 @@
+[package]
+name = "exifxmp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.31"
+kamadak-exif = "0.6"
+rfd = "0.15"
+flate2 = "1"
+
+[profile.release]
+strip = true
+lto = "thin"
+
